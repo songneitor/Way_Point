@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.titulo{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    
+}
+.login{
+    text-align: end;
+   
+    
+    
+    
+}
+.logar{
+    text-align: center;
+    background-color: lightgray;
+    
+}
+.cadastro{
+    text-align: center;
+    background-color: darkgray;
+}
+.aling{
+    text-align: center;
+
+}
+.img1{
+   border-color: #000;
+    border-top-width:2px;
+    border-left-width:2px;
+    border-right-width:6px;
+    border-bottom-width:6px;
+    border-style: solid;
+
+}
+
+
+
+
+
+
+#divbusca{
+    background-color:#ffffff;
+    border:solid 1px;
+    width:238px;
+    height: 25px;
+    border-width: 2px 6px 6px 2px;
+  }
+  
+  #busca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:17px;
+    border:none; 
+    margin-top: 2px; 
+    outline: none;
+  }
+
+  #imgbusca{
+    height: 20px;
+    width: 25px;
+    margin-top: 4px;
+    
+  }
+
+  .quadrado1{
+    margin: 10px;
+    width:100px;
+    height: 25px;
+    border:solid ;
+    border-width: 2px 6px 6px 2px;
+    background-color: #0D9ECA;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+  
+  }
+
+  
+
+
+
+  .quadrado2{
+    margin: 10px;
+    width:100px;
+    height: 25px;
+    border:solid;
+    border-width: 2px 6px 6px 2px;
+    background-color: #FFBA01;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+  }
+
+  .butao{
+    text-decoration: none;
+    color: #000;
+
+  }
+  #home{
+    font-family: arial;
+    font-weight: bold;
+text-decoration: underline;
+ 
+
+  }
+  #logo{
+    width: 100px;
+    margin-left: 20px;
+  }
+  #none{
+    text-decoration: none;
+    color: #000;
+  }
+
+
+  .container {
+    width: 100vw; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    }
+    
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+  }
+
+  .card {
+    align-items: center;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+    width: 50%; 
+  }
+
+  
+
+
+  .image{
+    width: 250px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  }
+  @media screen and (max-width: 1400px)  {
+  .image{
+    width: 200px;
+    height: 100;
+  }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .image{
+      width: 175px;
+      height: 125;
+    }
+    }
