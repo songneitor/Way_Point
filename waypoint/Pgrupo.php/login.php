@@ -40,6 +40,7 @@
     
     <?php
     include_once './configura/func.php';
+    session_start();
     
     if ((isset($_POST['usuario'])) && !empty($_POST['usuario'])) {
         $usuario = $_POST['usuario'];
@@ -59,6 +60,8 @@
     $login = login($usuario, $senha);
     if ($login == 1) {
         echo 'LOGADO';
+        $_SESSION['user'] = $usuario;
+        $_SESSION['senha'] = $senha;
 
     } else {
         echo 'USUARIO E/OU SENHA INCORRETOS';

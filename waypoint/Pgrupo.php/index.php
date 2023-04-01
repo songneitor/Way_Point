@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+<?php
 
+session_start();
+
+?>
 <!-- SIDEBAR -->
     <div class="sidebar " style=right:0;display:none; id="mySidebar">
 
@@ -28,7 +32,7 @@
             </center>
 
             <center>
-                <a class="perfil-nickname">Usuario</a>
+                <a class="perfil-nickname" id="aauser">Usuario</a>
             </center>
             
         <hr>
@@ -51,7 +55,7 @@
 
     
         <div class="logo">
-            <img src="./img/wp.png" class="img_logo">
+        <a href="index.php" ><img src="./img/wp.png" class="img_logo"></a> 
         </div>    
         
         <div id="divbusca">
@@ -143,7 +147,7 @@
         <div class="card">
             <h1>teste</h1>
             <p>teste</p>
-            <img src="./img/lupa.png" alt="" class="image">
+            <a href='PagEventos.php'><img src="./img/lupa.png" alt="" class="image"></a>
         </div>
         <div class="card">
             <h1>teste</h1>
@@ -209,6 +213,19 @@
       document.getElementById("mySidebar").style.display = "none";
     }
 </script>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<?php
+
+if (isset($_SESSION['user']) && isset($_SESSION['senha'])) {
+    $user = $_SESSION['user'];
+    echo "
+        <script>
+            $('a#aauser').html('". $user ."');
+        </script>
+    ";
+}
+
+?>
 
 
 
